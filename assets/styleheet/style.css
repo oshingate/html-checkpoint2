@@ -1,0 +1,617 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------    our   css ---------------- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section1 */
+
+.sec1back {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right bottom, #00000044, #00000067),
+    url("../media/banner.jpg");
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  /* background: Linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+  background-size: cover;
+  background-position: top;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-left: 10px;
+}
+
+.icons a {
+  padding: 8px;
+  color: black;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin: 0.7rem;
+}
+
+/* header */
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background-color: white;
+  padding-right: 32px;
+  position: sticky;
+  top: 0;
+  margin-top: 2rem;
+
+  width: 100%;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  padding: 0 32px;
+}
+
+.headernav a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 25px 5px;
+}
+
+.headernav a:active {
+  border-top: 2px solid tomato;
+}
+
+.sec1head {
+  text-align: center;
+  margin: 12rem 0;
+  color: rgb(248, 229, 229);
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgb(211, 214, 211);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.nav-btn-1 {
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(221, 60, 38);
+  text-transform: uppercase;
+}
+
+/*      section 2 */
+
+.section2 {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.section2 h2 {
+  padding-bottom: 0;
+  border-bottom: 1px solid gray;
+  padding-top: 15vh;
+}
+
+.container-row2 {
+  display: flex;
+}
+
+.block2-1 {
+  width: 22%;
+  height: 40vh;
+  margin: 1.5%;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block2-1 a i {
+  height: 100px;
+  width: 100px;
+
+  color: white;
+}
+
+.one {
+  background-color: rgb(95, 201, 157);
+}
+.two {
+  background-color: rgb(182, 119, 3);
+}
+.three {
+  background-color: rgb(59, 107, 161);
+}
+.four {
+  background-color: rgb(36, 175, 36);
+}
+
+/* section3 */
+
+.section3 {
+  height: 100vh;
+  text-align: center;
+}
+/* .sec3h2 {
+  padding-bottom: 0.5rem;
+} */
+
+.sec3imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec3imgs img {
+  width: 22%;
+  margin: 1.5%;
+}
+
+/* section4 */
+
+.section4 {
+  text-align: center;
+  height: 100vh;
+}
+/* .section4 h2 {
+  padding-bottom: 0.5rem;
+} */
+
+.sec4row1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 6vh;
+}
+.sec4row1 img {
+  width: 22%;
+  margin: 1.5%;
+  border-radius: 100%;
+}
+.sec4h3 {
+  margin-top: 15rem;
+  margin-bottom: 0.5rem;
+}
+.sec4h4 {
+  margin-top: 0rem;
+  color: gray;
+}
+
+.sec4row2 {
+  display: flex;
+
+  margin-top: 2rem;
+}
+
+.sec4col1 {
+  width: 68%;
+  margin: 0.5%;
+  text-align: left;
+}
+.sec4col1 p {
+  font-size: 1rem;
+  color: rgb(105, 104, 104);
+}
+.sec4col2 {
+  width: 28%;
+  margin: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: rgb(224, 197, 211); */
+}
+
+.block3 {
+  background-color: rgb(231, 73, 15);
+  width: 100%;
+  height: 20px;
+  margin: 1.5%;
+}
+
+.block3-1 {
+  border-right: 24px solid rgb(189, 189, 189);
+}
+.block3-2 {
+  border-right: 48px solid rgb(189, 189, 189);
+}
+.block3-3 {
+  border-right: 72px solid rgb(189, 189, 189);
+}
+.block3-4 {
+  border-right: 48px solid rgb(189, 189, 189);
+}
+
+.block3 h3 {
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 1rem;
+  color: white;
+  margin: 0;
+  margin-top: 0.3rem;
+}
+
+/* section4 */
+
+.section4 {
+  height: 100vh;
+  text-align: center;
+}
+
+.section4 h6 {
+  margin-top: 12rem;
+  font-size: 2rem;
+  color: gray;
+  text-align: center;
+}
+
+/* .section4 h2 {
+  margin-top: 10rem;
+} */
+.sec4h3 {
+  color: gray;
+  margin-top: 1rem;
+}
+iframe {
+  width: 100%;
+  height: 250px;
+  background-color: grey;
+}
+
+/* sec5 */
+
+.bar {
+  font-size: 2rem;
+  text-align: center;
+  color: grey;
+}
+.sec5h2 {
+  padding-top: 2rem;
+}
+.section5 {
+  height: 120vh;
+  text-align: left;
+}
+.sec4row1 {
+  display: flex;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.sec4col {
+}
+
+.col1 {
+  width: 58%;
+}
+.col2 {
+  width: 38%;
+}
+.sec4col p,
+.sec4col h4 {
+  font-size: 0.8rem;
+  color: rgb(88, 87, 87);
+}
+
+.h4 {
+  margin-top: 1rem;
+}
+h4 {
+  margin-top: 0.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input1 {
+  height: 30px;
+  margin: 1%;
+}
+
+.input2 {
+  height: 60px;
+  display: block;
+  margin: 1%;
+}
+button {
+  background-color: rgb(231, 73, 15);
+  color: white;
+  border: none;
+  padding: 15px;
+}
+
+/* footer */
+.footer {
+  height: 72px;
+  line-height: 72px;
+  padding: 1rem;
+  color: rgb(88, 87, 87);
+}
+
+.percentage {
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 0.3rem;
+}
+
+.gotobtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 16rem;
+  padding: 1rem 3rem;
+  line-height: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  background-color: rgb(231, 73, 15);
+}
+
+/* =--------------------------- gal-css--------------------------= */
+.gal-container {
+  width: 80%;
+  margin: 10%;
+}
+.vertcal-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gal-header {
+  width: 23%;
+  height: 100vh;
+  margin-right: 1%;
+  background-color: rgba(194, 74, 27, 0.959);
+  position: fixed;
+}
+.logoflex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+}
+headerh1 {
+  font-size: 2rem;
+  color: white;
+}
+.homelink {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+
+.gal-main {
+  width: 73%;
+  height: 100vh;
+  margin-left: 20rem;
+}
+.gal-header-2 {
+  margin-top: 21rem;
+}
+
+.alignleft {
+  display: flex;
+  justify-content: left;
+  padding-left: 0;
+}
+.heder2h2 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  text-transform: none;
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+.heder2h3 {
+  font-size: 0.7rem;
+}
+
+.tab {
+  padding-left: 2rem;
+}
+
+/* gal-sec */
+.gal-header {
+}
+
+.gal-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.gal-ver-sec {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.galimg {
+  width: 47%;
+  border: 2px solid black;
+  margin: 1%;
+  height: fit-content;
