@@ -220,7 +220,7 @@ table {
 }
 
 .headernav a:active {
-  border-top: 2px solid tomato;
+  border-top: 2px solid rgb(221, 60, 38);
 }
 
 .sec1head {
@@ -378,7 +378,7 @@ h3 {
 }
 
 .block3 {
-  background-color: rgb(231, 73, 15);
+  background-color: rgb(221, 60, 38);
   width: 100%;
   height: 20px;
   margin: 1.5%;
@@ -491,7 +491,7 @@ form {
   margin: 1%;
 }
 button {
-  background-color: rgb(231, 73, 15);
+  background-color: rgb(221, 60, 38);
   color: white;
   border: none;
   padding: 15px;
@@ -521,7 +521,7 @@ button {
   text-decoration: none;
   color: white;
   font-weight: 900;
-  background-color: rgb(231, 73, 15);
+  background-color: rgb(221, 60, 38);
 }
 
 /* =--------------------------- gal-css--------------------------= */
@@ -538,7 +538,7 @@ button {
   width: 23%;
   height: 100vh;
   margin-right: 1%;
-  background-color: rgba(194, 74, 27, 0.959);
+  background-color: rgb(221, 60, 38);
   position: fixed;
 }
 .logoflex {
@@ -607,7 +607,6 @@ headerh1 {
 .gal-ver-sec {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .galimg {
@@ -615,3 +614,4 @@ headerh1 {
   border: 2px solid black;
   margin: 1%;
   height: fit-content;
+}
