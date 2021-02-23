@@ -134,7 +134,9 @@ table {
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: "Open Sans";
 }
 
 .clearfix::after,
@@ -158,7 +160,9 @@ table {
 }
 
 /* section1 */
-
+.flexheading {
+  color: rgb(236 83 62);
+}
 .sec1back {
   position: absolute;
   z-index: -1;
@@ -189,7 +193,7 @@ table {
   padding: 8px;
   color: black;
   background-color: aliceblue;
-  border-radius: 50%;
+  border-radius: 100%;
   margin: 0.7rem;
 }
 
@@ -219,10 +223,12 @@ table {
   text-decoration: none;
   font-size: 1rem;
   padding: 25px 5px;
+  color: black;
 }
 
 .headernav a:active {
   border-top: 2px solid rgb(236 83 62);
+  color: rgb(236 83 62);
 }
 
 .sec1head {
@@ -233,7 +239,7 @@ table {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
   border-bottom: 4px solid rgb(211, 214, 211);
@@ -274,11 +280,15 @@ h3 {
 }
 /*      section 2 */
 .sec1h3 {
+  font-size: 1rem;
   color: white;
 }
+.sec2h3 {
+  text-align: center;
+}
 .section2,
-section3,
-section4 {
+.section3,
+.section4 {
   height: 100vh;
   width: 100%;
   background-color: white;
@@ -306,8 +316,7 @@ section4 {
 }
 
 .block2-1 a i {
-  height: 100px;
-  width: 100px;
+  size: 5x;
 
   color: white;
 }
@@ -338,6 +347,13 @@ section4 {
 }
 
 /* section4 */
+.sec2h2,
+.sec3h2,
+.sec4h2,
+.sec5h2 {
+  text-shadow: 1px 1px 1px rgb(49, 48, 48);
+  color: rgb(36, 34, 34);
+}
 
 .sec4row1 {
   display: flex;
@@ -404,7 +420,7 @@ section4 {
 .block3 h3 {
   font-size: 0.7rem;
   font-weight: 900;
-  text-align: left;
+  /* text-align: left; */
   padding-left: 1rem;
   color: white;
   margin: 0;
@@ -433,7 +449,18 @@ iframe {
 /* sec5 */
 
 .bar {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: gray;
+  font-weight: 100;
+}
+.bar1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: grey;
+}
+.bar2 {
+  font-size: 1rem;
   text-align: center;
   color: grey;
 }
@@ -461,7 +488,10 @@ iframe {
   font-size: 0.8rem;
   color: rgb(88, 87, 87);
 }
-
+.span {
+  font-size: 0.8rem;
+  color: rgb(88, 87, 87);
+}
 .h4 {
   margin-top: 1rem;
 }
@@ -506,15 +536,20 @@ button {
 }
 
 .gotobtn {
-  position: fixed;
-  bottom: 1rem;
-  right: 16rem;
   padding: 1rem 3rem;
   line-height: 10px;
   text-decoration: none;
   color: white;
   font-weight: 900;
   background-color: rgb(236 83 62);
+}
+.span {
+  color: black;
+  font-size: 0.9rem;
+}
+.red {
+  color: red;
+  display: inline-block;
 }
 
 /* =--------------------------- gal-css--------------------------= */
@@ -570,6 +605,14 @@ button {
   justify-content: left;
   padding-left: 0;
 }
+.galicon a {
+  padding: 8px;
+  color: white;
+  background-color: rgb(236 83 62);
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 0.7rem;
+}
 .heder2h2 {
   font-size: 1.2rem;
   color: white;
@@ -579,7 +622,9 @@ button {
   margin-bottom: 1rem;
 }
 .heder2h3 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  color: black;
+  text-transform: none;
 }
 
 .tab {
@@ -595,14 +640,47 @@ button {
   margin: 2rem 1rem;
 }
 
-.gal-ver-sec {
+.flexcontainer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 400vh;
 }
 
-.galimg {
-  width: 47%;
-  border: 2px solid black;
-  margin: 1%;
+.flexcont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 42%;
+  margin: 2%;
+}
+.flexcont1 img {
   height: fit-content;
+  vertical-align: top;
+}
+
+.galbox {
+}
+
+.flexcont3 {
+  float: left;
+
+  display: inline-block;
+}
+
+.flexcont4 {
+  float: right;
+  display: inline-block;
+}
+
+.galimg1 {
+  width: 28rem;
+  height: auto;
+  vertical-align: top;
+  margin-bottom: 3rem;
+}
+
+.flex12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
