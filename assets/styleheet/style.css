@@ -167,7 +167,9 @@ table {
   left: 0;
   right: 0;
   background-image: linear-gradient(to right bottom, #00000044, #00000067),
-    url("../media/banner.jpg");
+    url("../media/banner.jpg"), url("../media/gallery/09.jpg"),
+    url("../media/gallery/02.jpg");
+  background-repeat: no-repeat, repeat;
   opacity: 1;
   width: 100%;
   height: 100vh;
@@ -220,7 +222,7 @@ table {
 }
 
 .headernav a:active {
-  border-top: 2px solid rgb(221, 60, 38);
+  border-top: 2px solid rgb(236 83 62);
 }
 
 .sec1head {
@@ -245,19 +247,38 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   margin: 2rem 0;
+  color: gray;
 }
 
 .nav-btn-1 {
   padding: 1rem 2rem;
   color: white;
   text-decoration: none;
-  background-color: rgb(221, 60, 38);
+  background-color: rgb(236 83 62);
   text-transform: uppercase;
 }
-
+.circlediv {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: gray;
+  border-radius: 100%;
+  margin-left: 1rem;
+}
+.black {
+  background-color: black;
+}
 /*      section 2 */
-
-.section2 {
+.sec1h3 {
+  color: white;
+}
+.section2,
+section3,
+section4 {
   height: 100vh;
   width: 100%;
   background-color: white;
@@ -306,14 +327,6 @@ h3 {
 
 /* section3 */
 
-.section3 {
-  height: 100vh;
-  text-align: center;
-}
-/* .sec3h2 {
-  padding-bottom: 0.5rem;
-} */
-
 .sec3imgs {
   display: flex;
   flex-wrap: wrap;
@@ -325,14 +338,6 @@ h3 {
 }
 
 /* section4 */
-
-.section4 {
-  text-align: center;
-  height: 100vh;
-}
-/* .section4 h2 {
-  padding-bottom: 0.5rem;
-} */
 
 .sec4row1 {
   display: flex;
@@ -374,11 +379,10 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: rgb(224, 197, 211); */
 }
 
 .block3 {
-  background-color: rgb(221, 60, 38);
+  background-color: rgb(236 83 62);
   width: 100%;
   height: 20px;
   margin: 1.5%;
@@ -409,11 +413,6 @@ h3 {
 
 /* section4 */
 
-.section4 {
-  height: 100vh;
-  text-align: center;
-}
-
 .section4 h6 {
   margin-top: 12rem;
   font-size: 2rem;
@@ -421,9 +420,6 @@ h3 {
   text-align: center;
 }
 
-/* .section4 h2 {
-  margin-top: 10rem;
-} */
 .sec4h3 {
   color: gray;
   margin-top: 1rem;
@@ -452,9 +448,6 @@ iframe {
   display: flex;
   margin-top: 2rem;
   text-align: left;
-}
-
-.sec4col {
 }
 
 .col1 {
@@ -491,7 +484,7 @@ form {
   margin: 1%;
 }
 button {
-  background-color: rgb(221, 60, 38);
+  background-color: rgb(236 83 62);
   color: white;
   border: none;
   padding: 15px;
@@ -521,7 +514,7 @@ button {
   text-decoration: none;
   color: white;
   font-weight: 900;
-  background-color: rgb(221, 60, 38);
+  background-color: rgb(236 83 62);
 }
 
 /* =--------------------------- gal-css--------------------------= */
@@ -538,7 +531,7 @@ button {
   width: 23%;
   height: 100vh;
   margin-right: 1%;
-  background-color: rgb(221, 60, 38);
+  background-color: rgb(236 83 62);
   position: fixed;
 }
 .logoflex {
@@ -550,7 +543,7 @@ button {
   font-size: 2rem;
   background-color: transparent;
 }
-headerh1 {
+.headerh1 {
   font-size: 2rem;
   color: white;
 }
@@ -594,8 +587,6 @@ headerh1 {
 }
 
 /* gal-sec */
-.gal-header {
-}
 
 .gal-heading {
   font-size: 2.5rem;
